@@ -1,0 +1,12 @@
+health_check_port: 8080
+server_config:
+  processor_config:
+    type: "python_example_event_processor"
+  chain_id: 2
+  indexer_grpc_data_service_address: "grpc.testnet.aptoslabs.com:443"
+  auth_token: "aptoslabs_QV7ysuLAWKt_2NcZf3JA1hyLVUNgZprN2taCP75DXXk2k"
+  postgres_connection_string: "postgresql://fsn:123456@localhost:5432/example"
+  # Optional. Start processor at starting_version
+  starting_version: 6589314276
+  # Optional. Stop processor after ending_version.
+  ending_version: 6589314278
